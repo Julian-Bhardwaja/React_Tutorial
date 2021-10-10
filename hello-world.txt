@@ -1,6 +1,8 @@
 Hello World
 I have added text
 
+normal font -> Consolas, 'Courier New', monospace
+
 Top 10 Extensions for ReactJs in VSCode are:
     -The Bracket Pair Colorizer extension.
     -The change-case extension.
@@ -32,7 +34,7 @@ exporting => exporting defaults will give you the rights to change the name wher
 
 Class Components
 
-optional recieves (props) => es6 => JSX
+optional receives (props) => es6 => JSX
 
 it can maintain ... private state => only information to the current component
 
@@ -53,3 +55,15 @@ Class
 -Complex UI Logic
 -Provide lifecycle hooks
 -Stateful, Smart/ Container
+
+JSX
+-JavaScript XML (JSX) - Extension to the JS language syntax.
+-Write XML-like code for elements and components.
+-JSX tags have a tag name, attributes, and children.
+-JSX is not a necessity to write React applications.
+-JSX makes your react code simpler and elegant.
+-JSX ultimately transpiled to pure JS which is understood by the browsers.
+
+When you don't know what is the content is being passed in => unknown
+
+Props => they are immutable. They cannot be changed. <= TypeError will occur.
