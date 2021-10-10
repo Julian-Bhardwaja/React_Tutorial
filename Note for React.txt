@@ -67,3 +67,27 @@ JSX
 When you don't know what is the content is being passed in => unknown
 
 Props => they are immutable. They cannot be changed. <= TypeError will occur.
+
+Props Vs state
+
+Props => its get passed to the component
+         Function parameters
+         props are immutable
+         Access => props - Functional Component & this.props - Class Component
+          
+
+State => it is maintained within the component
+         Variables declared in the function body
+         state are mutable
+         Access => useState Hook - Functional Components & this.state - Class Component
+
+State => called to setState are asynchronous.
+
+setState => (accept the value to change, callback function)
+
+React makes group multiple setState calls into a single update for the BETTER PERFORMANCE.
+*** Whenever you have to update the state based on previous state, you needed to pass a function as an argument to setState instead of passing in the object.
+
+-Always make use of setState and never modify the state directly.
+-Certain code has to be executed after the state has been updated. Place that code in the callback function which is the second argument of the setState method.
+-Whenever you have to update the state based on previous state, you needed to pass a function as an argument to setState instead of passing in the object.
