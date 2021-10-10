@@ -1,2 +1,55 @@
 Hello World
 I have added text
+
+Top 10 Extensions for ReactJs in VSCode are:
+    -The Bracket Pair Colorizer extension.
+    -The change-case extension.
+    -The Code Spell Checker extension.
+    -The Duplicate Selection extension.
+    -The EditorConfig for VS Code extension.
+    -The VSCode React Refactor extension.
+    -The npm Intellisense extension.
+    -The ESLint extension.
+    -The ES7 React/Redux/GraphQL/React-Native snippets extension.
+    -The Prettier – Code formatted extension.
+
+Turbo Console Log -> Pressing ctrl + alt + L
+
+Component Types 
+
+Two Types of Component -> 1.Stateless Functional Component -> JS Functional -> return that describe UI s
+                          2.Stateful Class Component -> Class extending Component class
+                                                        Render method return HTML e.g class welcome extends React.Component { Render()}
+
+Components describe a part of the UI. They are re-usable and can also be nested inside another Component as well.
+
+Functional Components
+
+optional object of properties (props) => JS function => JSX
+
+exporting => exporting defaults will give you the rights to change the name where you implement that component.
+             export => you had to import the name with the same name! also had to include the curly brackets for e.g { name }
+
+Class Components
+
+optional recieves (props) => es6 => JSX
+
+it can maintain ... private state => only information to the current component
+
+Functional Component vs Class Component
+
+Functional
+-simple function
+-use func component as much as possible
+-absence 'this' keyword
+-solution without using state
+-Mainly responsible for the UI
+-called Stateless/Dumb/Presentational
+
+Class
+
+-More feature rich 
+-Maintain their own private data -state
+-Complex UI Logic
+-Provide lifecycle hooks
+-Stateful, Smart/ Container
