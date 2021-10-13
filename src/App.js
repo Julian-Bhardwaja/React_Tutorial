@@ -1,6 +1,12 @@
 import './App.css';
 
+import ClassClick from './components/ClassClick';
 import Counter from './components/Counter';
+import EventBind from './components/EventBind';
+import FunctionClick from './components/FunctionClick';
+import NameList from './components/NameList';
+import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
 
 // import Hello from './components/Hello';
 // import Message from './components/Message';
@@ -15,7 +21,13 @@ function App() {
        <Hello name={'Bae'} age={19} />
        <Hello name={'Gura'} age={21} ><p>This is children props</p></Hello> */}
        {/* <Message /> */}
-       <Counter />
+       {/* <Counter /> */}
+       {/* <FunctionClick />
+       <ClassClick /> */}
+       {/* <EventBind /> */}
+       {/* <ParentComponent /> */}
+       {/* <UserGreeting /> */}
+       <NameList />
     </div>
   );
 }
