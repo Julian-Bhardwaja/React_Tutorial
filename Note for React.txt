@@ -121,3 +121,7 @@ Conditional Rendering
 2.Element variables => used JS variables to store elements. It can change entire thing or just a part.
 3.Ternary conditional operator
 4.Short circuit operator
+
+List Rendering
+-use map method for the list rendering 
+-

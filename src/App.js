@@ -4,6 +4,7 @@ import ClassClick from './components/ClassClick';
 import Counter from './components/Counter';
 import EventBind from './components/EventBind';
 import FunctionClick from './components/FunctionClick';
+import NameList from './components/NameList';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 
@@ -25,7 +26,8 @@ function App() {
        <ClassClick /> */}
        {/* <EventBind /> */}
        {/* <ParentComponent /> */}
-       <UserGreeting />
+       {/* <UserGreeting /> */}
+       <NameList />
     </div>
   );
 }
