@@ -91,3 +91,20 @@ React makes group multiple setState calls into a single update for the BETTER PE
 -Always make use of setState and never modify the state directly.
 -Certain code has to be executed after the state has been updated. Place that code in the callback function which is the second argument of the setState method.
 -Whenever you have to update the state based on previous state, you needed to pass a function as an argument to setState instead of passing in the object.
+
+Event Handling
+
+When users are interacting with app, events are fired! 
+
+1.Specify by camelCase
+2.With JSX, you passed a function as event handler rather than a string.
+3.onEvent = {eventHandler} => if you add parentheses, it will fire as a function call.
+4.Generally eventHandler tends to modify the state of component using state method.
+
+Binding with Event Handler 
+
+`this` keyword 
+-binding in the render method. this.handler.bind(this)
+-arrow function inside onClick. () => this.handler(). if the function body is single statement, we dont need curly brackets.
+-binding that event handler in the constructor as suppose binding in the render method. 
+-change the function declaration with arrow declaration. es6 style
