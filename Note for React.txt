@@ -114,3 +114,10 @@ Method as props
 -Event wanted to happen in the child component but will be executed the function from parent component. We passed the method as a prop itself to the child component.
 
 passing parameters when calling parent function. use arrow function is useful. it function is the simplest way to pass parameters from child to parent.
+
+Conditional Rendering
+
+1.if/ese => doesn't work inside JSX which mean inside return. Because JSX is syntax for function calls and object construction.
+2.Element variables => used JS variables to store elements. It can change entire thing or just a part.
+3.Ternary conditional operator
+4.Short circuit operator
