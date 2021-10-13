@@ -4,6 +4,7 @@ import ClassClick from './components/ClassClick';
 import Counter from './components/Counter';
 import EventBind from './components/EventBind';
 import FunctionClick from './components/FunctionClick';
+import ParentComponent from './components/ParentComponent';
 
 // import Hello from './components/Hello';
 // import Message from './components/Message';
@@ -21,7 +22,8 @@ function App() {
        {/* <Counter /> */}
        {/* <FunctionClick />
        <ClassClick /> */}
-       <EventBind />
+       {/* <EventBind /> */}
+       <ParentComponent />
     </div>
   );
 }

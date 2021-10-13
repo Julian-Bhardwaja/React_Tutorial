@@ -105,6 +105,12 @@ Binding with Event Handler
 
 `this` keyword 
 -binding in the render method. this.handler.bind(this)
--arrow function inside onClick. () => this.handler(). if the function body is single statement, we dont need curly brackets.
--binding that event handler in the constructor as suppose binding in the render method. 
+-arrow function inside onClick. () => this.handler(). if the function body is single statement, we don't need curly brackets.
+-binding that event handler in the constructor as suppose binding in the render method. constructor() { super() this.state={} this.handler = this.handler.bind(this)}
 -change the function declaration with arrow declaration. es6 style
+
+Method as props
+-When child component wanted to communicate with the parent component, props , passed in the reference to a method as props to the child component
+-Event wanted to happen in the child component but will be executed the function from parent component. We passed the method as a prop itself to the child component.
+
+passing parameters when calling parent function. use arrow function is useful. it function is the simplest way to pass parameters from child to parent.
