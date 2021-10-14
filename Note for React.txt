@@ -124,4 +124,14 @@ Conditional Rendering
 
 List Rendering
 -use map method for the list rendering 
--
+-each item in the list rendered using should have prop key and should be unique. 
+-key prop can be anything => id, name, .... anything that is unique
+-key prop cannot be accessible in the child component. It will result in undefined.
+-key prop is reserved. Don't use key prop to render data. 
+
+Why do we need them, keys?
+-Because React identify which item in the list has changed or added or removed, play the crucial role in UI. 
+-How react handle update? React iterate over both the list at the same time and generate a mutation whenever there is a difference. React insert the update the tree by inserting item by the end of the list. Not breaking down whole tree and rebuild the tree.
+-React uses keys to match the child to the original tree to the new tree.
+-keys give the elements a stable identity.
+
