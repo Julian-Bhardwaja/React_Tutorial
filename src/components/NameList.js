@@ -23,7 +23,7 @@ function NameList() {
             skill: 'Project Manager',
         },
     ]
-    const nameList = names.map(name => <h2>{name}</h2>)
+    const nameList = names.map((name, i) => <h2 key={i}>{name}</h2>)
     const personList = persons.map(person => (
         <Person key={person.id} person={person} />
     ))

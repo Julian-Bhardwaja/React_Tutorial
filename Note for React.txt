@@ -135,3 +135,13 @@ Why do we need them, keys?
 -React uses keys to match the child to the original tree to the new tree.
 -keys give the elements a stable identity.
 
+What if there is no id? 
+-Use index as a key. you can use with (value , index)
+-Using name is one of the option but if there is at least one duplication it will still show the name.
+
+Index as key anti-pattern
+-the item in your list do not have a unique id.
+-The list is a static list and will not change.
+-The list will never be reordered or filtered.
+-Just use it on last resort 
+
