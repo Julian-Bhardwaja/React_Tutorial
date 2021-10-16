@@ -190,6 +190,46 @@ Mounting Lifecycle Methods
         
 -componentDidMount() => called only once and invoked immediately after a component and all its children components have been rendered to the DOM.
                         it is a perfect place to cause side effects. Ex: Interact with the DOM or perform any ajax calls to load data.
-                        
+
+Updating Lifecycle Methods
+
+static getDerivedStateFromProps(props, state) => Method is called every time a component is re-rendered.
+                                                 Set the state
+                                                 Do not cause side effects. HTTP request
+                                                 rarely used lifecycle method.
+
+shouldComponentUpdate(nextProps, nextState) => receives the updated props and state
+                                               Dictates if the component should re-render or not.
+                                               By default, every changes make to props or state will be re=render
+                                               This method can prevent the default by returning false
+                                               Performance optimization 
+                                               rarely used lifecycle method.
+
+render() => Only required method.
+            Read props & state and return JSX
+            Do not change state or interact with DOM or make ajax calls.
+            Children components lifecycle methods are also executed.  
+
+getSnapshotBeforeUpdate(prevProps, prevState) => Called right before the changes from the virtual DOM are to be reflected in the DOM.
+                                                 rarely used lifecycle method.
+                                                 Capture some information from the DOM.
+                                                 Method will either return null or return a value. Returned value will be passed as the third parameter to the next method.
+                                                 
+componentDidUpdate(prevProps, prevState, snapshot) => called after the render is finished in the re-render cycles
+                                                      you can be sure that the component and all its sub component have properly render itself after the update
+                                                      Called only once.
+                                                      Cause side effect.... called ajax but compare prevProps and NewProps whether you called ajax or not.
+
+Unmounting Phase Method 
+
+componentWillUnmount() => Method is invoked immediately before a component is unmounted and destroyed.
+                          Cancelling any network requests, removing event handlers, Cancelling any subscriptions and also invalidating timers.
+                          Do not call the setState method. it is because the component is never re-render after it has been unmounted.
+
+Error Handling Phase Method 
+
+static getDerivedStateFromError(error) 
+                                        => When there is an error either during rendering, in a lifecycle method, or in the constructor of any child component.
+componentDidCatch(error, info)
 
 
