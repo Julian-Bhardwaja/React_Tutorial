@@ -150,3 +150,8 @@ Styling React Components
 -Inline styling => represent as an object and their keys are in camelCase and value is string.
 -CSS Modules
 -CSS in JS Libraries 
+
+Controlled components
+Such element which control by React is called controlled components.
+-to convert to controlled components => 1.create the component state that will control the value of the input element. 
+                                        2.handling the onChange event
