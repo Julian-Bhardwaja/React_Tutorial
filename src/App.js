@@ -1,6 +1,6 @@
 import './App.css';
 
-import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 
 function App() {
   return (
@@ -20,7 +20,8 @@ function App() {
        {/* <NameList /> */}
        {/* <StyleSheet primary={true} />
        <InlineStyle /> */}
-       <Form />
+       {/* <Form /> */}
+       <LifecycleA />
     </div>
   );
 }

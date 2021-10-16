@@ -155,3 +155,41 @@ Controlled components
 Such element which control by React is called controlled components.
 -to convert to controlled components => 1.create the component state that will control the value of the input element. 
                                         2.handling the onChange event
+
+Lifecycle Method
+
+->When we create a react component goes to several stages and its lifecycle.
+This method does not exist on Functional Component. useEffect hook which partially related to the lifecycle hook.
+There are 4 phases => Mounting, Updating, Unmounting, Error Handling
+
+Mounting => When an instance of a component is being created and inserted into the DOM.
+Updating => When a component is being re-render as a result of changes to either its props or state.
+Unmounting => When a component is being removed from the DOM.
+Error Handling=> When there is an error during rendering, in a lifecycle method. or in the constructor of any child component.
+
+Mounting => constructor, static getDerivedStateFromProps, render and componentDidMount. 
+Updating => static getDerivedStateFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate and componentDidUpdate.
+Unmounting => componentWillUnmount
+Error Handling => static getDerivedStateFromError and componentDidCatch
+
+Mounting Lifecycle Methods
+-constructor(props) => A special function that will get called whenever a new component is created. 
+                       It is perfect for initializing state and binding the event handlers.
+                       Do not cause side effects. Ex: HTTP requests. Never make a request!
+                       super(props) This will call the base class constructor. Constructor is the only place where you expected to change by directly overwrite this.state
+
+-static getDerivedStateFromProps(props, state) => rarely used lifecycle method.
+                                    When the state of the component depends on changes in props over time.
+                                    Set the state. It does not have access to this keyword. 
+                                    Do not cause side effects. HTTP request
+
+-render() => Only required method.
+             Read props & state and return JSX
+             Do not change state or interact with DOM or make ajax calls.
+             Children components lifecycle methods are also executed.
+        
+-componentDidMount() => called only once and invoked immediately after a component and all its children components have been rendered to the DOM.
+                        it is a perfect place to cause side effects. Ex: Interact with the DOM or perform any ajax calls to load data.
+                        
+
+
