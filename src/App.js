@@ -4,8 +4,10 @@ import ClassClick from './components/ClassClick';
 import Counter from './components/Counter';
 import EventBind from './components/EventBind';
 import FunctionClick from './components/FunctionClick';
+import InlineStyle from './components/InlineStyle';
 import NameList from './components/NameList';
 import ParentComponent from './components/ParentComponent';
+import StyleSheet from './components/StyleSheet';
 import UserGreeting from './components/UserGreeting';
 
 // import Hello from './components/Hello';
@@ -27,7 +29,9 @@ function App() {
        {/* <EventBind /> */}
        {/* <ParentComponent /> */}
        {/* <UserGreeting /> */}
-       <NameList />
+       {/* <NameList /> */}
+       <StyleSheet primary={true} />
+       <InlineStyle />
     </div>
   );
 }

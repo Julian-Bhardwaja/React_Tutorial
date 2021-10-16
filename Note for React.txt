@@ -145,3 +145,8 @@ Index as key anti-pattern
 -The list will never be reordered or filtered.
 -Just use it on last resort 
 
+Styling React Components
+-CSS stylesheets
+-Inline styling => represent as an object and their keys are in camelCase and value is string.
+-CSS Modules
+-CSS in JS Libraries 
