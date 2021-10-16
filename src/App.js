@@ -1,6 +1,6 @@
 import './App.css';
 
-import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
 
 function App() {
   return (
@@ -21,7 +21,8 @@ function App() {
        {/* <StyleSheet primary={true} />
        <InlineStyle /> */}
        {/* <Form /> */}
-       <LifecycleA />
+       {/* <LifecycleA /> */}
+       <FragmentDemo />
     </div>
   );
 }
