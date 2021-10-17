@@ -267,4 +267,6 @@ Pure Component => SC of prevState with currentState and SC of prevProps with cur
 The reference to an array never changes and the PC only check for that the component will not re-render even if there is a difference. Always return a new object or array
 when dealing with pure component***
 
+Memo is to Functional as pure Component
+
 
