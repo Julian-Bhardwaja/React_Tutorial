@@ -1,7 +1,9 @@
 import './App.css';
 
+import ErrorBoundary from './components/ErrorBoundary';
 import FRParentInput from './components/FRParentInput';
 import FocusInput from './components/FocusInput';
+import Hero from './components/Hero';
 import PortalDemo from './components/PortalDemo';
 
 function App() {
@@ -29,7 +31,16 @@ function App() {
        {/* <RefsDemo /> */}
        {/* <FocusInput /> */}
        {/* <FRParentInput /> */}
-       <PortalDemo />
+       {/* <PortalDemo /> */}
+       <ErrorBoundary>
+        <Hero heroName="Superman" />
+       </ErrorBoundary>
+       <ErrorBoundary>
+          <Hero heroName="Batman" />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName="Joker" />
+        </ErrorBoundary>
     </div>
   );
 }
