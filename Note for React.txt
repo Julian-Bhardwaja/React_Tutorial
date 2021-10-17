@@ -269,4 +269,24 @@ when dealing with pure component***
 
 Memo is to Functional as pure Component
 
+Refs
 
+-Refs make it possible to access DOM nodes within React.
+1.Create Ref => It is common to create ref in the constructor because they can be reference throughout the component.
+2.Attach the Ref to the element
+3.Call the method on the element
+
+Another possibility to use Ref => to fetch the input value.
+
+Callback Ref approach => 1.create Ref. assign the value of null => this.cbRef = null
+                         2.create a method that will assign the DOM element to the ref. this.setCallBackRef = (element) => { this .cbRef = element }
+                         3.attach this ref to input element 
+                         4.componentDidMount => if (this.cbRef) { this.cbRef.focus() }
+
+Refs with Class Component => ✅
+
+Forwarding Refs => is a technique that pass automatically ref through a component to its children.
+1.create ref in parent component
+2.Attach the Ref to the element
+3.Forward this ref to the element in the child component
+When the component is passed as a parameter to create ref method, it receives ref attribute as 2nd parameters. This will come in handy when you are working with Libraries or high order component
