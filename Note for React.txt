@@ -290,3 +290,15 @@ Forwarding Refs => is a technique that pass automatically ref through a componen
 2.Attach the Ref to the element
 3.Forward this ref to the element in the child component
 When the component is passed as a parameter to create ref method, it receives ref attribute as 2nd parameters. This will come in handy when you are working with Libraries or high order component
+
+Portals => Provide a way to render children to the DOM nodes that exist outside the DOM hierarchy of the parent component
+        => Ability to break out of this DOM tree. So you can render a component onto the DOM node that is not under the root element
+
+        1. added div tag with id portal-root below the root div.
+        2. create a new component
+        3. ReactDom.createPortal method to insert that component under the portal-root node.
+
+        Why do we need them?
+        -Having to deal with parent component CSS, when the child component is a modal, pop-up or a tool-tip
+        -even though a portal can be any where in the DOM tree, it behave like a normal DOM child in every other way.
+        -Event Bubbling => so event fire inside the portal will propagate to ancestors in the containing React tree even those element are not ancestors in the dom tree. 
