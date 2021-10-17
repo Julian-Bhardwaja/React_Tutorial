@@ -327,3 +327,6 @@ const EnhancedComponent = higherOrderComponent( originalComponent )
         To fix this issue => Passed down the remaining props to the Wrapped Component using spread operator {...this.props}. Please make sure to pass down the prop
 
 2.Passing parameters to the HOC function => passing a parameter to the HOC function. (WrappedComponent, method)
+
+-Popular React Libraries => Connect HOC in Redux with Router in React Router, with styles in MaterialUI. It is a nice pattern that can be used to share common functionality 
+ between React Components.
