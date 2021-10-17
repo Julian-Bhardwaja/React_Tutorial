@@ -1,6 +1,6 @@
 import './App.css';
 
-import FragmentDemo from './components/FragmentDemo';
+import ParentComp from './components/ParentComp';
 
 function App() {
   return (
@@ -22,7 +22,8 @@ function App() {
        <InlineStyle /> */}
        {/* <Form /> */}
        {/* <LifecycleA /> */}
-       <FragmentDemo />
+       {/* <FragmentDemo /> */}
+       <ParentComp />
     </div>
   );
 }

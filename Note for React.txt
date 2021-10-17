@@ -237,3 +237,34 @@ Fragments <></>
 -It let you group a list of children elements without adding extra nodes to the DOM. 
 -key attribute is the only attributes that can be added to react fragment.
 -if you use shorthand syntax, you cannot use key.
+
+Pure Component
+
+-Difference between component class and pure component class
+-If the parent component re-render, the child component will re-render. Unless return false from the shouldComponentUpdate
+-Pure Component will not re-render.
+
+-When will we use pure? => Most of the time, RC is used but only used it when your component hit Performance error
+
+Regular Component =>  a regular component does not implement the shouldComponentUpdate method. It always returns true by default.
+
+Pure Component => a pure component on the other hand implements shouldComponentUpdate with a shallow props and state comparison.
+
+Shallow comparison(SC)
+Primitive Types -> string, number, boolean 
+a SC b returns true if a and b have the same value and area of the same type.
+for example => 'Julian' === 'Julian' return true.
+
+Complex Types -> object and array
+a SC b returns true if a and b reference the exact same object.
+for example => var a = [a,b,c] var b=[a,b,c] var c = a ; 
+var ab_eq = (a === b) //false  => even though the items of both arrays are the same but those two array do not reference the same object
+var ac_eq = (a === c) // true  
+
+Pure Component => SC of prevState with currentState and SC of prevProps with currentProps only if the different is made, the component will re-render                                                                                                                                                                                      
+
+*** You should not mutate object or array in props or state. If you want to add new item to the object or array, do not mutate it by pushing it to the list.
+The reference to an array never changes and the PC only check for that the component will not re-render even if there is a difference. Always return a new object or array
+when dealing with pure component***
+
+
