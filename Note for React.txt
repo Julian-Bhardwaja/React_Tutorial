@@ -312,3 +312,18 @@ Error Boundary => A class component that implements either one or both of the li
 
 static getDerivedStateFromError method => used to render a fallback UI after an error is thrown. It is not a good choice to hide all the true statements when there is something wrong.
 componentDidCatch method => is used to log the error information.
+
+Higher Order Component
+
+Why HOC is important? => To share common functionality between components.
+
+-A pattern where a function takes a component as an argument and returns a new component.  
+e.g. => const NewComponent = higherOrderComponent( originalComponent )
+
+const EnhancedComponent = higherOrderComponent( originalComponent )
+-HOC is maintaining state
+
+1.Passing down the prop => from the parent to the child, the prop value goes into the HOC component as a prop. Not to the child! 
+        To fix this issue => Passed down the remaining props to the Wrapped Component using spread operator {...this.props}. Please make sure to pass down the prop
+
+2.Passing parameters to the HOC function => passing a parameter to the HOC function. (WrappedComponent, method)

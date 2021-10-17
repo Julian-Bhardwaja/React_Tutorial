@@ -1,14 +1,13 @@
 import './App.css';
 
-import ErrorBoundary from './components/ErrorBoundary';
-import FRParentInput from './components/FRParentInput';
-import FocusInput from './components/FocusInput';
-import Hero from './components/Hero';
-import PortalDemo from './components/PortalDemo';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 function App() {
   return (
     <div className="App">
+      <ClickCounter />
+      <HoverCounter />
        {/* <Welcome name={'Kronii'} age={20} />
        <Hello name={'Kronii'} age={20} />
        <Hello name={'Mumei'} age={18} />
@@ -32,7 +31,7 @@ function App() {
        {/* <FocusInput /> */}
        {/* <FRParentInput /> */}
        {/* <PortalDemo /> */}
-       <ErrorBoundary>
+       {/* <ErrorBoundary>
         <Hero heroName="Superman" />
        </ErrorBoundary>
        <ErrorBoundary>
@@ -40,7 +39,7 @@ function App() {
         </ErrorBoundary>
         <ErrorBoundary>
           <Hero heroName="Joker" />
-        </ErrorBoundary>
+        </ErrorBoundary> */}
     </div>
   );
 }
