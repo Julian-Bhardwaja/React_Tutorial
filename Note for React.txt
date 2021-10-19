@@ -338,3 +338,18 @@ What is render props?
 The term "render prop" refers to a technique for sharing code between React components using  prop whose value is a function. 
 -A Container component where we implement the common functionality that is the state and method.
 -it can also use it with a children instead of render.
+
+Context
+What are the needs for the context api?
+Sending directly props to a component. <= context 
+
+-Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+1.Create a context.
+2.Provide a context value. => a place you provide is important because only the decedent component can consume it. It is responsible for providing the value for all the decedent components.
+3.Consume the context value.
+
+Context API 
+1. You can set a default value to your context. The default value is set while creating your context. By adding the string value in the createContext('something').
+2. The Context Types Properties => You can use in the another way by using context type on the class. class.contextType = UserContext; 
+
+No.2 only works with the class components. You can only subscribe to the single context using contextType.
