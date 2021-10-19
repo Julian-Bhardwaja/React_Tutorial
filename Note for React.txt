@@ -353,3 +353,7 @@ Context API
 2. The Context Types Properties => You can use in the another way by using context type on the class. class.contextType = UserContext; 
 
 No.2 only works with the class components. You can only subscribe to the single context using contextType.
+
+React and HTTP 
+using axios is the best library for React HTTP.
+-axios is promise based library.
