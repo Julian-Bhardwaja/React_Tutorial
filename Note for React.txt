@@ -330,3 +330,11 @@ const EnhancedComponent = higherOrderComponent( originalComponent )
 
 -Popular React Libraries => Connect HOC in Redux with Router in React Router, with styles in MaterialUI. It is a nice pattern that can be used to share common functionality 
  between React Components.
+
+ React Props 
+ -needs to share a common functionality between component.
+-In React, it is possible to use prop whose value is a function to control what is actually render by a component.
+What is render props?
+The term "render prop" refers to a technique for sharing code between React components using  prop whose value is a function. 
+-A Container component where we implement the common functionality that is the state and method.
+-it can also use it with a children instead of render.
